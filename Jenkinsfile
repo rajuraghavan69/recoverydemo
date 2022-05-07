@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Build') { 
             steps { 
-               echo "mvn clean install"
+               echo "clean verify sonar:sonar -Dsonar.login=17c2a8cd16ef28367fb37150d91b12a07c13e1bb"
             }
         }
     }
